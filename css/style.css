@@ -1,0 +1,87 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Open sans', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* BOLINHAS EMBAIXO DO CAROUSEL */
+.splide__pagination {
+    display: none;
+}
+
+/* HOVER */
+
+.test {
+    position: relative;
+    height: 250px;
+    width: 300px;
+}
+.test h2 {
+    align-items: center;
+    text-align: center;
+}
+.test__div {
+    padding: 0;
+}
+  
+.test .test__div {
+    padding: 0;
+}
+  
+.test .test__div1 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.test .img__description {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.3s ease-out;
+    transform: translate(-50%, -50%);
+    width:auto;
+    top: 30%;
+    left:50%;
+    align-items: center;
+}
+
+.img__description h2 {
+    color: black;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.img__description ul {
+    margin-top: 30px;
+}
+
+.test .test_div1:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.72);
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    height: 100%;
+    width: 100%;
+    content: "";
+}
+
+.test:hover .test_div1:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+  .test:hover .img__description {
+    opacity: 1;
+}
